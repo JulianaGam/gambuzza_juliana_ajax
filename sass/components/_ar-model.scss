@@ -83,11 +83,73 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-      .Hotspot {
-        display: block;
-      }
+
+/* Contenedor de la sección Materials */
+#material-container {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#material-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+/* Loader más pequeño y centrado */
+#loader {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 15px auto 10px;
+}
+
+/* Lista de materiales */
+#material-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#material-list li {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+.material-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.material-description {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.4;
+}
+
+
+@media (min-width: 768px) {
+  .Hotspot {
+    display: block;
   }
+
+  #static-model {
+    display: none;
+  }
+
+  #model {
+    display: block;
+  }
+}
 
 #static-model {
   display: block;
@@ -100,12 +162,3 @@
   display: none;
 }
 
-@media (min-width: 768px) {
-  #static-model {
-    display: none;
-  }
-
-  #model {
-    display: block;
-  }
-}
